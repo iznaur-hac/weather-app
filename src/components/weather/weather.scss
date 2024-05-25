@@ -1,0 +1,110 @@
+.weather {
+  width: 725px;
+  position: relative;
+
+  padding-top: 63px;
+  padding-right: 70px;
+  padding-bottom: 60px;
+  padding-left: 66px;
+  &__cloud {
+    width: 175px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__temp {
+    font-size: 164px;
+    color: white;
+    font-weight: 100;
+    line-height: 196.8px;
+    display: inline-block;
+    position: relative;
+
+    &_c {
+      &::after {
+        content: "°C";
+        font-size: 32px;
+        font-weight: 400;
+        top: -70px;
+        position: absolute;
+      }
+    }
+
+    &_f {
+      &::after {
+        content: "°F";
+        font-size: 32px;
+        font-weight: 400;
+        top: -70px;
+        position: absolute;
+      }
+    }
+  }
+
+  &__date {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+  }
+
+  &__text {
+    font-weight: 300;
+    color: #fff;
+
+    &_fw-b {
+      font-size: 36px;
+    }
+
+    &_fw-m {
+      font-size: 24px;
+    }
+  }
+
+  &__states {
+    margin-top: 38px;
+    display: flex;
+    column-gap: 27px;
+    color: #fff;
+    align-items: center;
+  }
+
+  &__state {
+    display: flex;
+    column-gap: 7px;
+    font-size: 22px;
+    color: white;
+    font-weight: 300;
+
+    & img {
+      margin-right: 7px;
+    }
+  }
+
+  &__state-midle {
+    white-space: nowrap;
+  }
+
+  &__days {
+    margin-top: 75px;
+    width: 660px;
+    position: relative;
+  }
+
+  &__day {
+    width: 110px;
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 38px;
+    align-items: center;
+    background: #ffffff33;
+
+    border: 1px solid #fff;
+    border-radius: 11px;
+
+    & img {
+      width: 54px;
+    }
+  }
+}

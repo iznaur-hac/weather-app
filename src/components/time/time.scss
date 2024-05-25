@@ -1,0 +1,102 @@
+@import "./time__info/time__info.scss";
+
+.time-contayner {
+  max-width: 576px;
+}
+.wrapper {
+  width: auto;
+  height: auto;
+
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    138deg,
+    rgba(255, 255, 255, 0.4) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  border-left: 1px solid #ffffff73;
+}
+
+.time {
+  padding: 53px 38px 44px 62px;
+
+  &__hours {
+    display: flex;
+    justify-content: space-between;
+    height: 325px;
+  }
+
+  &__hour {
+    background-color: #ffffff42;
+    display: flex;
+    flex-direction: column;
+    padding: 27.5px 19px 36.8px 17.8px;
+    border-radius: 100px;
+    align-items: center;
+
+    & img {
+      width: 68px;
+      margin-bottom: 42.8px;
+    }
+
+    &_big {
+      padding: 31px 15px 46px 15px;
+
+      & img {
+        width: 75.19px;
+        margin-bottom: 50.9px;
+      }
+
+      .time__hour-title {
+        font-size: 29px;
+        margin-bottom: 12px;
+      }
+
+      .time__hour-subtitle {
+        font-size: 24px;
+      }
+    }
+  }
+
+  &__hour-title {
+    margin-bottom: 7.2px;
+    font-size: 28px;
+    color: #fff;
+    text-shadow: none;
+
+    & span {
+      font-size: 18px;
+    }
+  }
+
+  &__hour-subtitle {
+    font-size: 22px;
+    color: #ebebeb;
+    text-shadow: none;
+
+    & span {
+      font-size: 18px;
+    }
+  }
+
+  &__box {
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &_big {
+      align-self: flex-start;
+      & > p {
+        font-size: 36px;
+      }
+    }
+
+    & > p {
+      margin-bottom: 28px;
+      font-size: 28px;
+      color: #fff;
+      text-shadow: none;
+      font-size: 28px;
+    }
+  }
+}
