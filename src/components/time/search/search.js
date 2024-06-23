@@ -17,12 +17,8 @@ function Search() {
   };
 
   const handleSearch = () => {
-    if (cityName.trim() === "") {
-      setError(true);
-    } else {
-      dispatch(cityNaming(cityName));
-      dispatch(fetchWeather());
-    }
+    dispatch(cityNaming(cityName.trim()));
+    dispatch(fetchWeather());
   };
 
   const handleKeyPress = (e) => {
@@ -33,8 +29,9 @@ function Search() {
   };
 
   return (
-    <form className="search">
+    <form className="search" action="#" onSubmit={handleSearch}>
       <img src={locate} alt="locate" />
+
       <input
         type="text"
         value={cityName}
@@ -43,10 +40,9 @@ function Search() {
         placeholder="Enter city name"
         className="search__input"
       />
-
-      <button className="search__btn" onClick={handleSearch}>
-        <div className="search__img"></div>
-      </button>
+      <div className="search__img">
+        <input type="submit" className="search__btn" value="" />
+      </div>
     </form>
   );
 }

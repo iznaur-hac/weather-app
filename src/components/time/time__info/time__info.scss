@@ -2,12 +2,12 @@
   &__info {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    column-gap: 26px;
     margin-top: 50px;
   }
 
   &__hr {
-    width: 85%;
+    width: 420px;
     height: 1px;
     border-top: 1px solid #fff;
   }

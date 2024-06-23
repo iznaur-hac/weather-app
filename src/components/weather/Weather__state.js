@@ -16,7 +16,7 @@ function WeatherState() {
         <p>Wind</p>
         <p className="weather__state-midle">
           &ensp;{Math.round(weather?.wind?.speed)}
-          {units === "metric" ? "km/h" : "m/h"}
+          &nbsp;{units === "metric" ? "km/h" : "m/h"}
         </p>
       </div>
       |

@@ -13,7 +13,7 @@ function Time() {
   const time = useSelector((state) => state.weather);
 
   const convertUnixTo12HourFormat = (unixTime) => {
-    const date = new Date((unixTime + time.timezone) * 1000);
+    const date = new Date((unixTime + time?.timezone) * 1000);
     let hours = date.getUTCHours();
     const minutes = date.getUTCMinutes();
     hours = hours % 12;
@@ -22,16 +22,16 @@ function Time() {
     return `${hours}:${minutesStr}`;
   };
 
-  const currentTime = convertUnixTo12HourFormat(time.dt);
+  const currentTime = convertUnixTo12HourFormat(time?.dt);
 
-  const sunriseTime = convertUnixTo12HourFormat(time.sys.sunrise);
-  const sunriseTimeSub = convertUnixTo12HourFormat(time.sys.sunrise + 600);
+  const sunriseTime = convertUnixTo12HourFormat(time?.sys?.sunrise);
+  const sunriseTimeSub = convertUnixTo12HourFormat(time?.sys?.sunrise + 600);
 
-  const sunsetTime = convertUnixTo12HourFormat(time.sys.sunset);
-  const sunsetTimeSub = convertUnixTo12HourFormat(time.sys.sunset + 600);
+  const sunsetTime = convertUnixTo12HourFormat(time?.sys?.sunset);
+  const sunsetTimeSub = convertUnixTo12HourFormat(time?.sys?.sunset + 600);
 
-  const goldenHour = convertUnixTo12HourFormat(time.sys.sunrise + 3600);
-  const goldenHourEnd = convertUnixTo12HourFormat(time.sys.sunset - 3600);
+  const goldenHour = convertUnixTo12HourFormat(time?.sys?.sunrise + 3600);
+  const goldenHourEnd = convertUnixTo12HourFormat(time?.sys?.sunset - 3600);
 
   return (
     <div className="wrapper">

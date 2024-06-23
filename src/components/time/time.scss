@@ -4,7 +4,7 @@
   max-width: 576px;
 }
 .wrapper {
-  width: auto;
+  width: 100%;
   height: auto;
 
   background: rgb(255, 255, 255);
@@ -21,7 +21,7 @@
 
   &__hours {
     display: flex;
-    justify-content: space-between;
+    column-gap: 50px;
     height: 325px;
   }
 
@@ -61,20 +61,22 @@
     margin-bottom: 7.2px;
     font-size: 28px;
     color: #fff;
-    text-shadow: none;
+    text-shadow: -2px 2px 1px #0000001a;
 
     & span {
       font-size: 18px;
+      text-shadow: -2px 2px 1px #0000001a;
     }
   }
 
   &__hour-subtitle {
     font-size: 22px;
     color: #ebebeb;
-    text-shadow: none;
+    text-shadow: -2px 2px 1px #0000001a;
 
     & span {
       font-size: 18px;
+      text-shadow: -2px 2px 1px #0000001a;
     }
   }
 
@@ -88,6 +90,7 @@
       align-self: flex-start;
       & > p {
         font-size: 36px;
+        text-shadow: -2px 2px 1px #0000001a;
       }
     }
 
@@ -95,7 +98,7 @@
       margin-bottom: 28px;
       font-size: 28px;
       color: #fff;
-      text-shadow: none;
+      text-shadow: -2px 2px 1px #0000001a;
       font-size: 28px;
     }
   }

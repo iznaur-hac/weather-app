@@ -4,10 +4,13 @@
   margin-bottom: 77px;
 
   &__input {
-    width: 260px;
+    width: 222px;
+    margin-left: 36px;
 
-    font-size: 32px;
     color: #fff;
+    font-size: 30px;
+    font-weight: 300;
+    text-shadow: -2px 2px 1px #0000001a;
 
     height: 40px;
     outline: none;
@@ -17,16 +20,12 @@
     &::placeholder {
       color: #fff;
       font-size: 30px;
+      font-weight: 300;
+      text-shadow: -2px 2px 1px #0000001a;
     }
   }
 
-  & img {
-    width: 35px;
-    margin-right: 34px;
-  }
-
   &__btn {
-    margin-left: 100px;
     width: 60px;
     height: 60px;
     display: flex;
@@ -46,9 +45,12 @@
   }
 
   &__img {
-    width: 26px;
-    height: 26px;
+    width: 60px;
+    height: 60px;
+    margin-left: 146px;
     background-image: url(../../../assets/icons/search.svg);
     background-repeat: no-repeat;
+    background-position-x: 17px;
+    background-position-y: 17px;
   }
 }
